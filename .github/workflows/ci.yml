@@ -1,11 +1,11 @@
 name: ci pipeline
 on:
-  push:
-  pull_request:
+ push:
+ pull_request:
 jobs:
   build_test:
-  runs-on: self-hosted
-  steps:
+   runs-on: self-hosted
+   steps:
     - name: checkout code
       uses: actions/checkout@v4
     - name: setup Node.js
